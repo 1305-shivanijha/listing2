@@ -3,12 +3,35 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+.fa {
+  font-size: 12px;
+  text-align: center;
+    text-decoration: none;
 
+}
 
-
+ 
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+}
+.btn, .button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .btn, .button {
 
     border: none;
@@ -24,28 +47,65 @@
     white-space: nowrap;
 }
 
-
-.main {
-  width: 100%;
-  
+* {
+  box-sizing: border-box;
 }
 
+
+
+.main {
+  max-width: 100%;
+  margin: auto;
+ 
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+.row,
+.row > .column {
+  padding: px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  display: none;
+ 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
 
 .show {
   display: block;
 }
-
 .btn {
 border:1.8px solid #3068b2;
   outline: none;
   padding: 12px 16px;
-  background-color:#D3D3D3	;
+  background-color:#D3D3D3 ;
   cursor: pointer;
   color:#3068b2;
   margin:5px;
   border-radius:10px;
 
-  
+ 
 }
 
 .btn:hover {
@@ -55,7 +115,7 @@ border:1.8px solid #3068b2;
 .btn.active {
   background-color:#001933;
   color: #3068b2;
-  
+ 
 
 }
 @media only screen and (max-width: 600px) {
@@ -66,16 +126,12 @@ border:1.8px solid #3068b2;
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
 
 .column1 {
   float: left;
   width:auto;
   padding: 10px;
-  
+ 
 }
 .column2 {
   float: left;
@@ -90,27 +146,21 @@ border:1.8px solid #3068b2;
   margin-left:30px;
 }
 
-.row:after {
+.row22:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 img{
-	transform: skew(-10deg);
+transform: skew(-10deg);
     border-radius:25px;
 
 
 }
 .ab{
 border:2px solid grey;
-	transform: skew(-10deg);
+transform: skew(-10deg);
 width:150px;
 height:150px;
 text-align:center;
@@ -120,10 +170,9 @@ margin-left:-35px;
 
 
 }
-
 body, html {
   height: 100%;
-  margin: 0;
+  margin:0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -146,53 +195,81 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+   margin-top:50px;
+   padding-right:30px;
+   height:auto;
+}
+
+@media only screen and (max-width: 600px) {
+  img{
+  width:180px;
+  height:150px;
+
+  }
+  .ab{
+  width:100px;
+  height:100px;
+    margin-left:-6px;
+
+  }
+  .footer{
+  height:70px;
+  text-align:center;
+  }
+  .pq{
+    text-align:center;
+    display:inline-block;
+  }
+}
 
 </style>
 </head>
 <body>
 
+
+
+
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">EVENTS</h1>
+    <h1 style="font-size:20px">EVENTS</h1>
     </div>
     </div>
 
 
 
-<div id="myBtnContainer" style="width:100%;text-align:center;">
-          
-          
-  
+
+
+
+<div id="myBtnContainer"  style="text-align:center;">
+ 
+ 
 
   <button class="btn active" onclick="filterSelection('upcoming')">
-
  UPCOMING WEBINARS</button>
  
 
-  <button class="btn" onclick="filterSelection('watched')" >
+  <button class="btn" onclick="filterSelection('watched')">
 WATCHED WEBINARS</button>
-  
+ 
 
+ 
+</div>
 <hr style="width:100%;height:3px;background-color:grey;">
 
 
-
-
-<div class="main" >
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="column upcoming">
+<div class="main">
 <div class="row">
+  <div class="column upcoming" style="width:100%;
+">
+    <div class="row22">
   <div class="column1" style="background-color:">
   <div class="ab">
 <h2 style="color:blue;font-size:30px;">26 <br><span style="color:grey;font-size:19px;">APRIL</span></h2>
@@ -218,16 +295,20 @@ WATCHED WEBINARS</button>
 
   </div>
 </div>
-
 <hr style="width:100%;height:3px;background-color:grey;">
 
-</div>
-
-<div class="column watched">
-<div class="row">
+ 
+  </div>
+ 
+ 
+ 
+ 
+  <div class="column upcoming" >
+   
+    <div class="row22">
   <div class="column1" style="background-color:">
   <div class="ab">
-<h2 style="color:blue;font-size:30px;">26 <br><span style="color:grey;font-size:19px;">APRIL</span></h2>
+<h2 style="color:blue;font-size:30px;">30 <br><span style="color:grey;font-size:19px;">APRIL</span></h2>
 </div>
   </div>
   <div class="column2" style="background-color:;">
@@ -250,14 +331,19 @@ WATCHED WEBINARS</button>
 
   </div>
 </div>
-
 <hr style="width:100%;height:3px;background-color:grey;">
+   
+  </div>
+ 
+ 
 
-</div><div class="column watched">
-<div class="row">
+ 
+  <div class="column watched
+">
+    <div class="row22">
   <div class="column1" style="background-color:">
   <div class="ab">
-<h2 style="color:blue;font-size:30px;">26 <br><span style="color:grey;font-size:19px;">APRIL</span></h2>
+<h2 style="color:blue;font-size:30px;">31 <br><span style="color:grey;font-size:19px;">MAY</span></h2>
 </div>
   </div>
   <div class="column2" style="background-color:;">
@@ -280,14 +366,17 @@ WATCHED WEBINARS</button>
 
   </div>
 </div>
-
 <hr style="width:100%;height:3px;background-color:grey;">
-
-</div><div class="column watched">
-<div class="row">
+ 
+  </div>
+ 
+ 
+  <div class="column watched">
+   
+     <div class="row22">
   <div class="column1" style="background-color:">
   <div class="ab">
-<h2 style="color:blue;font-size:30px;">26 <br><span style="color:grey;font-size:19px;">APRIL</span></h2>
+<h2 style="color:blue;font-size:30px;">13<br><span style="color:grey;font-size:19px;">MAY</span></h2>
 </div>
   </div>
   <div class="column2" style="background-color:;">
@@ -310,53 +399,29 @@ WATCHED WEBINARS</button>
 
   </div>
 </div>
-
 <hr style="width:100%;height:3px;background-color:grey;">
-
-</div>
-
-
-<div class="column watched">
-<div class="row">
-  <div class="column1" style="background-color:">
-  <div class="ab">
-<h2 style="color:blue;font-size:30px;">26 <br><span style="color:grey;font-size:19px;">APRIL</span></h2>
-</div>
+   
   </div>
-  <div class="column2" style="background-color:;">
-  <img src="https://dev2.mymedisage.com/storage/images/newsletter/Website-thambnil-optionss-02.jpg" alt="Trulli" width="250" height="200">
+ 
 
-  </div>
-  <div class="column3" style="background-color:;">
-    <p style="font-size:27px;">COMPLICATION IN LA PA ROSCOPIC UROLOGY PA RT 1</p>
-    <p style="color:grey;">SUN PHA RMA
-1930 - 2100 hrs (IST)</p>
-
-
-<button style="background-color:#3167B1;color:white;padding-top:10px;padding-bottom:10px;font-size:17px;border:none;padding-left:20px;padding-right:20px;border-radius:5px;font-weight:700;">Register Now </button>
-
-
-
-<button style="background-color:#3167B1;color:white;padding-top:10px;padding-bottom:10px;font-size:17px;border:none;padding-left:20px;padding-right:20px;border-radius:5px;font-weight:700;">Add to calender </button>
-
-
-
-  </div>
+ 
+ 
+ 
 </div>
 
-<hr style="width:100%;height:3px;background-color:grey;">
+</div>
+<button style="float:right;font-size:10px;padding:10px;border-radius:5px;border:1px solid grey;color:grey;"> MORE </button>
+
+<div class="footer">
+
+<p style="display:inline-block;text-align:center;font-size:12px;">For any queries, email at info@mymedisage.com</p>
+
+<p class="pq" style="float:right;font-size:12px;">Follow us on <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+
+<a href="#" class="fa fa-instagram"></a></p>
 
 </div>
-
-
-
-
-
-</div>
-
-
-
-
 <script>
 filterSelection("all")
 function filterSelection(c) {
@@ -384,7 +449,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);    
     }
   }
   element.className = arr1.join(" ");
